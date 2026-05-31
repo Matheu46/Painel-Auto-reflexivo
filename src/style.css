@@ -11,4 +11,55 @@
   body {
     @apply bg-slate-50 text-slate-800 antialiased font-sans transition-colors duration-300;
   }
+
+  body.retro-theme {
+    background-color: #000000;
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWkwdHZlMHp3Z2Q5cWhyaWczZGJ1eTd3dXN1bmg4b2c0dW1odHdrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGcfzaX9hFFQJYre/giphy.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #00FF00;
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", sans-serif;
+    cursor: crosshair;
+  }
+
+  body.retro-theme h1,
+  body.retro-theme h2,
+  body.retro-theme h3,
+  body.retro-theme h4,
+  body.retro-theme h5,
+  body.retro-theme h6 {
+    font-family: "Times New Roman", Times, serif;
+    color: #FFFF00;
+  }
+
+  body.retro-theme a {
+    color: #00FFFF;
+    text-decoration: underline;
+  }
+
+  body.retro-theme a:hover {
+    color: #FF00FF;
+    cursor: help;
+  }
+
+  .retro-theme .retro-blink {
+    animation: blinker 1s step-start infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .retro-theme .retro-border {
+    border: 6px ridge #c0c0c0;
+    background-color: #000080;
+    color: #ffffff;
+  }
+
+  .retro-theme .border-outset {
+    border-style: outset;
+  }
 }
